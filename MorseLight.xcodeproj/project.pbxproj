@@ -25,8 +25,6 @@
 		57752805169B298E005E5218 /* ofxiphone-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57752804169B298E005E5218 /* ofxiphone-Info.plist */; };
 		57818D221699782D00D203E2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57818D211699782D00D203E2 /* Default-568h@2x.png */; };
 		57818D241699783100D203E2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57818D231699783100D203E2 /* Default@2x.png */; };
-		5799283C17AE2581007DEAC7 /* MorseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5799283A17AE2581007DEAC7 /* MorseCodec.cpp */; };
-		57A32255178AF72800C68A41 /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57A321CE178AF72800C68A41 /* install.xml */; };
 		57A32256178AF72800C68A41 /* opencv_calib3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32235178AF72800C68A41 /* opencv_calib3d.a */; };
 		57A32257178AF72800C68A41 /* opencv_contrib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32236178AF72800C68A41 /* opencv_contrib.a */; };
 		57A32258178AF72800C68A41 /* opencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32237178AF72800C68A41 /* opencv_core.a */; };
@@ -48,19 +46,12 @@
 		57A32268178AF72800C68A41 /* ofxCvImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57A3224F178AF72800C68A41 /* ofxCvImage.cpp */; };
 		57A32269178AF72800C68A41 /* ofxCvShortImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57A32252178AF72800C68A41 /* ofxCvShortImage.cpp */; };
 		57AB6CEE167FE07E000C1B18 /* changelog.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57AB6CAD167FE07E000C1B18 /* changelog.txt */; };
-		57AB6CEF167FE07E000C1B18 /* install.xml in Resources */ = {isa = PBXBuildFile; fileRef = 57AB6CAE167FE07E000C1B18 /* install.xml */; };
 		57AB6CF0167FE07E000C1B18 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 57AB6CAF167FE07E000C1B18 /* LICENSE.txt */; };
 		57AB6CF1167FE07E000C1B18 /* ofxAccelerometer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6CB1167FE07E000C1B18 /* ofxAccelerometer.cpp */; };
-		57AB6CF2167FE07E000C1B18 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 57AB6CB4167FE07E000C1B18 /* README */; };
-		57AB6CF3167FE07E000C1B18 /* ofxTransitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6CB6167FE07E000C1B18 /* ofxTransitions.cpp */; };
-		57AB6CF4167FE07E000C1B18 /* ofxTweener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6CB8167FE07E000C1B18 /* ofxTweener.cpp */; };
-		57AB6CF5167FE07E000C1B18 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 57AB6CBB167FE07E000C1B18 /* README */; };
 		57AB6CF6167FE07E000C1B18 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6CE7167FE07E000C1B18 /* tinyxml.cpp */; };
 		57AB6CF7167FE07E000C1B18 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6CE9167FE07E000C1B18 /* tinyxmlerror.cpp */; };
 		57AB6CF8167FE07E000C1B18 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6CEA167FE07E000C1B18 /* tinyxmlparser.cpp */; };
 		57AB6CF9167FE07E000C1B18 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57AB6CEC167FE07E000C1B18 /* ofxXmlSettings.cpp */; };
-		57F000DA1788710700575BA3 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 57F000D11788710700575BA3 /* README */; };
-		57F000DB1788710700575BA3 /* ofxiPhoneTorch.mm in Sources */ = {isa = PBXBuildFile; fileRef = 57F000D41788710700575BA3 /* ofxiPhoneTorch.mm */; };
 		BB16EBD20F2B2A9500518274 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD10F2B2A9500518274 /* OpenGLES.framework */; };
 		BB16EBD90F2B2AB500518274 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16EBD80F2B2AB500518274 /* QuartzCore.framework */; };
 		BB24DD8F10DA77E000E9C588 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BB24DD8C10DA77E000E9C588 /* Default.png */; };
@@ -73,10 +64,43 @@
 		E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400713B39D2100A75A5D /* CoreMedia.framework */; };
 		E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400813B39D2100A75A5D /* CoreVideo.framework */; };
 		E41D400E13B39D2100A75A5D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D400913B39D2100A75A5D /* MapKit.framework */; };
-		E41D421413B3A95300A75A5D /* libofxiPhone_iphoneos_Debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D410213B3A0D800A75A5D /* libofxiPhone_iphoneos_Debug.a */; };
+		E41D421413B3A95300A75A5D /* libofxiOS_iphoneos_Debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E41D410213B3A0D800A75A5D /* libofxiOS_iphoneos_Debug.a */; };
 		E4A823A412561BE3002F86A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A823A312561BE3002F86A2 /* CoreGraphics.framework */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 		E4D8936F11527B74007E1F53 /* ofkiosApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936D11527B74007E1F53 /* ofkiosApp.mm */; };
+		FDD9E4C317C51D6400E4DD20 /* MorseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4C117C51D6400E4DD20 /* MorseCodec.cpp */; };
+		FDD9E4E717C51FCD00E4DD20 /* ofxTransitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4DC17C51FCD00E4DD20 /* ofxTransitions.cpp */; };
+		FDD9E4E817C51FCD00E4DD20 /* ofxTweener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4DE17C51FCD00E4DD20 /* ofxTweener.cpp */; };
+		FDD9E50617C5203000E4DD20 /* ofxiPhoneTorch.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4FF17C5203000E4DD20 /* ofxiPhoneTorch.mm */; };
+		FDD9E55417C5219E00E4DD20 /* ofAppiOSWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E50E17C5219D00E4DD20 /* ofAppiOSWindow.mm */; };
+		FDD9E55517C5219E00E4DD20 /* ofxiOSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E51217C5219D00E4DD20 /* ofxiOSAppDelegate.mm */; };
+		FDD9E55617C5219E00E4DD20 /* ofxiOSEAGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E51417C5219D00E4DD20 /* ofxiOSEAGLView.mm */; };
+		FDD9E55717C5219E00E4DD20 /* ofxiOSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E51617C5219D00E4DD20 /* ofxiOSViewController.mm */; };
+		FDD9E55817C5219E00E4DD20 /* ofxiOSAccelerometer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E51817C5219D00E4DD20 /* ofxiOSAccelerometer.mm */; };
+		FDD9E55917C5219E00E4DD20 /* ofxiOSAlerts.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E51A17C5219D00E4DD20 /* ofxiOSAlerts.mm */; };
+		FDD9E55A17C5219E00E4DD20 /* EAGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E51E17C5219D00E4DD20 /* EAGLView.m */; };
+		FDD9E55B17C5219E00E4DD20 /* ES1Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E52017C5219D00E4DD20 /* ES1Renderer.m */; };
+		FDD9E55C17C5219E00E4DD20 /* ES2Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E52217C5219D00E4DD20 /* ES2Renderer.m */; };
+		FDD9E55D17C5219E00E4DD20 /* AVSoundPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E52917C5219E00E4DD20 /* AVSoundPlayer.m */; };
+		FDD9E55E17C5219E00E4DD20 /* ofxiOSSoundPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E52B17C5219E00E4DD20 /* ofxiOSSoundPlayer.mm */; };
+		FDD9E55F17C5219E00E4DD20 /* ofxiOSSoundStream.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E52D17C5219E00E4DD20 /* ofxiOSSoundStream.mm */; };
+		FDD9E56017C5219E00E4DD20 /* ofxiOSSoundStreamDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E52F17C5219E00E4DD20 /* ofxiOSSoundStreamDelegate.mm */; };
+		FDD9E56117C5219E00E4DD20 /* ofxOpenALSoundPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E53017C5219E00E4DD20 /* ofxOpenALSoundPlayer.cpp */; };
+		FDD9E56217C5219E00E4DD20 /* SoundEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E53217C5219E00E4DD20 /* SoundEngine.cpp */; };
+		FDD9E56317C5219E00E4DD20 /* SoundInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E53517C5219E00E4DD20 /* SoundInputStream.m */; };
+		FDD9E56417C5219E00E4DD20 /* SoundOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E53717C5219E00E4DD20 /* SoundOutputStream.m */; };
+		FDD9E56517C5219E00E4DD20 /* SoundStream.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E53917C5219E00E4DD20 /* SoundStream.m */; };
+		FDD9E56617C5219E00E4DD20 /* ofxiOSCoreLocation.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E53C17C5219E00E4DD20 /* ofxiOSCoreLocation.mm */; };
+		FDD9E56717C5219E00E4DD20 /* ofxiOSExternalDisplay.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E53E17C5219E00E4DD20 /* ofxiOSExternalDisplay.mm */; };
+		FDD9E56817C5219E00E4DD20 /* ofxiOSExtras.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E54017C5219E00E4DD20 /* ofxiOSExtras.mm */; };
+		FDD9E56917C5219E00E4DD20 /* ofxiOSImagePicker.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E54217C5219E00E4DD20 /* ofxiOSImagePicker.mm */; };
+		FDD9E56A17C5219E00E4DD20 /* ofxiOSKeyboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E54417C5219E00E4DD20 /* ofxiOSKeyboard.mm */; };
+		FDD9E56B17C5219E00E4DD20 /* ofxiOSMapKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E54617C5219E00E4DD20 /* ofxiOSMapKit.mm */; };
+		FDD9E56C17C5219E00E4DD20 /* ofxiOSMapKitDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E54817C5219E00E4DD20 /* ofxiOSMapKitDelegate.mm */; };
+		FDD9E56D17C5219E00E4DD20 /* AVFoundationVideoGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E54D17C5219E00E4DD20 /* AVFoundationVideoGrabber.mm */; };
+		FDD9E56E17C5219E00E4DD20 /* AVFoundationVideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E54F17C5219E00E4DD20 /* AVFoundationVideoPlayer.m */; };
+		FDD9E56F17C5219E00E4DD20 /* ofxiOSVideoGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E55117C5219E00E4DD20 /* ofxiOSVideoGrabber.mm */; };
+		FDD9E57017C5219E00E4DD20 /* ofxiOSVideoPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E55317C5219E00E4DD20 /* ofxiOSVideoPlayer.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,9 +147,6 @@
 		57752804169B298E005E5218 /* ofxiphone-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ofxiphone-Info.plist"; sourceTree = "<group>"; };
 		57818D211699782D00D203E2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		57818D231699783100D203E2 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		5799283A17AE2581007DEAC7 /* MorseCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MorseCodec.cpp; path = "../../../../../rederence/MorseCode/c++/MorseCodec.cpp"; sourceTree = "<group>"; };
-		5799283B17AE2581007DEAC7 /* MorseCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MorseCodec.h; path = "../../../../../rederence/MorseCode/c++/MorseCodec.h"; sourceTree = "<group>"; };
-		57A321CE178AF72800C68A41 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		57A321D3178AF72800C68A41 /* cv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cv.h; sourceTree = "<group>"; };
 		57A321D4178AF72800C68A41 /* cv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = cv.hpp; sourceTree = "<group>"; };
 		57A321D5178AF72800C68A41 /* cvaux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cvaux.h; sourceTree = "<group>"; };
@@ -240,16 +261,9 @@
 		57A32253178AF72800C68A41 /* ofxCvShortImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxCvShortImage.h; sourceTree = "<group>"; };
 		57A32254178AF72800C68A41 /* ofxOpenCv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOpenCv.h; sourceTree = "<group>"; };
 		57AB6CAD167FE07E000C1B18 /* changelog.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = changelog.txt; sourceTree = "<group>"; };
-		57AB6CAE167FE07E000C1B18 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		57AB6CAF167FE07E000C1B18 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		57AB6CB1167FE07E000C1B18 /* ofxAccelerometer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxAccelerometer.cpp; sourceTree = "<group>"; };
 		57AB6CB2167FE07E000C1B18 /* ofxAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxAccelerometer.h; sourceTree = "<group>"; };
-		57AB6CB4167FE07E000C1B18 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		57AB6CB6167FE07E000C1B18 /* ofxTransitions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTransitions.cpp; sourceTree = "<group>"; };
-		57AB6CB7167FE07E000C1B18 /* ofxTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTransitions.h; sourceTree = "<group>"; };
-		57AB6CB8167FE07E000C1B18 /* ofxTweener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTweener.cpp; sourceTree = "<group>"; };
-		57AB6CB9167FE07E000C1B18 /* ofxTweener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTweener.h; sourceTree = "<group>"; };
-		57AB6CBB167FE07E000C1B18 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		57AB6CBD167FE07E000C1B18 /* ofxUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI.h; sourceTree = "<group>"; };
 		57AB6CBE167FE07E000C1B18 /* ofxUI2DPad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUI2DPad.h; sourceTree = "<group>"; };
 		57AB6CBF167FE07E000C1B18 /* ofxUIBiLabelSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUIBiLabelSlider.h; sourceTree = "<group>"; };
@@ -296,9 +310,6 @@
 		57AB6CEA167FE07E000C1B18 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
 		57AB6CEC167FE07E000C1B18 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		57AB6CED167FE07E000C1B18 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
-		57F000D11788710700575BA3 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
-		57F000D31788710700575BA3 /* ofxiPhoneTorch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiPhoneTorch.h; sourceTree = "<group>"; };
-		57F000D41788710700575BA3 /* ofxiPhoneTorch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiPhoneTorch.mm; sourceTree = "<group>"; };
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		BB24DD8C10DA77E000E9C588 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = bin/data/Default.png; sourceTree = "<group>"; };
@@ -316,6 +327,79 @@
 		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
 		E4D8936C11527B74007E1F53 /* ofkiosApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofkiosApp.h; path = src/ofkiosApp.h; sourceTree = SOURCE_ROOT; };
 		E4D8936D11527B74007E1F53 /* ofkiosApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ofkiosApp.mm; path = src/ofkiosApp.mm; sourceTree = SOURCE_ROOT; };
+		FDD9E4C117C51D6400E4DD20 /* MorseCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MorseCodec.cpp; path = "../../../../../../../Dropbox/work/rAA/MorseCode/c++/MorseCodec.cpp"; sourceTree = "<group>"; };
+		FDD9E4C217C51D6400E4DD20 /* MorseCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MorseCodec.h; path = "../../../../../../../Dropbox/work/rAA/MorseCode/c++/MorseCodec.h"; sourceTree = "<group>"; };
+		FDD9E4DC17C51FCD00E4DD20 /* ofxTransitions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTransitions.cpp; sourceTree = "<group>"; };
+		FDD9E4DD17C51FCD00E4DD20 /* ofxTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTransitions.h; sourceTree = "<group>"; };
+		FDD9E4DE17C51FCD00E4DD20 /* ofxTweener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTweener.cpp; sourceTree = "<group>"; };
+		FDD9E4DF17C51FCD00E4DD20 /* ofxTweener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTweener.h; sourceTree = "<group>"; };
+		FDD9E4FE17C5203000E4DD20 /* ofxiPhoneTorch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiPhoneTorch.h; sourceTree = "<group>"; };
+		FDD9E4FF17C5203000E4DD20 /* ofxiPhoneTorch.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiPhoneTorch.mm; sourceTree = "<group>"; };
+		FDD9E50D17C5219D00E4DD20 /* ofAppiOSWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofAppiOSWindow.h; sourceTree = "<group>"; };
+		FDD9E50E17C5219D00E4DD20 /* ofAppiOSWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofAppiOSWindow.mm; sourceTree = "<group>"; };
+		FDD9E50F17C5219D00E4DD20 /* ofxiOSApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSApp.h; sourceTree = "<group>"; };
+		FDD9E51117C5219D00E4DD20 /* ofxiOSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSAppDelegate.h; sourceTree = "<group>"; };
+		FDD9E51217C5219D00E4DD20 /* ofxiOSAppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSAppDelegate.mm; sourceTree = "<group>"; };
+		FDD9E51317C5219D00E4DD20 /* ofxiOSEAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSEAGLView.h; sourceTree = "<group>"; };
+		FDD9E51417C5219D00E4DD20 /* ofxiOSEAGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSEAGLView.mm; sourceTree = "<group>"; };
+		FDD9E51517C5219D00E4DD20 /* ofxiOSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSViewController.h; sourceTree = "<group>"; };
+		FDD9E51617C5219D00E4DD20 /* ofxiOSViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSViewController.mm; sourceTree = "<group>"; };
+		FDD9E51817C5219D00E4DD20 /* ofxiOSAccelerometer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSAccelerometer.mm; sourceTree = "<group>"; };
+		FDD9E51917C5219D00E4DD20 /* ofxiOSAlerts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSAlerts.h; sourceTree = "<group>"; };
+		FDD9E51A17C5219D00E4DD20 /* ofxiOSAlerts.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSAlerts.mm; sourceTree = "<group>"; };
+		FDD9E51B17C5219D00E4DD20 /* ofxiOSAlertsListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSAlertsListener.h; sourceTree = "<group>"; };
+		FDD9E51D17C5219D00E4DD20 /* EAGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EAGLView.h; sourceTree = "<group>"; };
+		FDD9E51E17C5219D00E4DD20 /* EAGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EAGLView.m; sourceTree = "<group>"; };
+		FDD9E51F17C5219D00E4DD20 /* ES1Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES1Renderer.h; sourceTree = "<group>"; };
+		FDD9E52017C5219D00E4DD20 /* ES1Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES1Renderer.m; sourceTree = "<group>"; };
+		FDD9E52117C5219D00E4DD20 /* ES2Renderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ES2Renderer.h; sourceTree = "<group>"; };
+		FDD9E52217C5219D00E4DD20 /* ES2Renderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ES2Renderer.m; sourceTree = "<group>"; };
+		FDD9E52317C5219D00E4DD20 /* ESRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESRenderer.h; sourceTree = "<group>"; };
+		FDD9E52417C5219D00E4DD20 /* ofxiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOS.h; sourceTree = "<group>"; };
+		FDD9E52517C5219D00E4DD20 /* ofxiOSExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSExtensions.h; sourceTree = "<group>"; };
+		FDD9E52617C5219E00E4DD20 /* ofxiPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiPhone.h; sourceTree = "<group>"; };
+		FDD9E52817C5219E00E4DD20 /* AVSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVSoundPlayer.h; sourceTree = "<group>"; };
+		FDD9E52917C5219E00E4DD20 /* AVSoundPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVSoundPlayer.m; sourceTree = "<group>"; };
+		FDD9E52A17C5219E00E4DD20 /* ofxiOSSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSSoundPlayer.h; sourceTree = "<group>"; };
+		FDD9E52B17C5219E00E4DD20 /* ofxiOSSoundPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSSoundPlayer.mm; sourceTree = "<group>"; };
+		FDD9E52C17C5219E00E4DD20 /* ofxiOSSoundStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSSoundStream.h; sourceTree = "<group>"; };
+		FDD9E52D17C5219E00E4DD20 /* ofxiOSSoundStream.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSSoundStream.mm; sourceTree = "<group>"; };
+		FDD9E52E17C5219E00E4DD20 /* ofxiOSSoundStreamDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSSoundStreamDelegate.h; sourceTree = "<group>"; };
+		FDD9E52F17C5219E00E4DD20 /* ofxiOSSoundStreamDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSSoundStreamDelegate.mm; sourceTree = "<group>"; };
+		FDD9E53017C5219E00E4DD20 /* ofxOpenALSoundPlayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOpenALSoundPlayer.cpp; sourceTree = "<group>"; };
+		FDD9E53117C5219E00E4DD20 /* ofxOpenALSoundPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxOpenALSoundPlayer.h; sourceTree = "<group>"; };
+		FDD9E53217C5219E00E4DD20 /* SoundEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SoundEngine.cpp; sourceTree = "<group>"; };
+		FDD9E53317C5219E00E4DD20 /* SoundEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundEngine.h; sourceTree = "<group>"; };
+		FDD9E53417C5219E00E4DD20 /* SoundInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundInputStream.h; sourceTree = "<group>"; };
+		FDD9E53517C5219E00E4DD20 /* SoundInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundInputStream.m; sourceTree = "<group>"; };
+		FDD9E53617C5219E00E4DD20 /* SoundOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundOutputStream.h; sourceTree = "<group>"; };
+		FDD9E53717C5219E00E4DD20 /* SoundOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundOutputStream.m; sourceTree = "<group>"; };
+		FDD9E53817C5219E00E4DD20 /* SoundStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundStream.h; sourceTree = "<group>"; };
+		FDD9E53917C5219E00E4DD20 /* SoundStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SoundStream.m; sourceTree = "<group>"; };
+		FDD9E53B17C5219E00E4DD20 /* ofxiOSCoreLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSCoreLocation.h; sourceTree = "<group>"; };
+		FDD9E53C17C5219E00E4DD20 /* ofxiOSCoreLocation.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSCoreLocation.mm; sourceTree = "<group>"; };
+		FDD9E53D17C5219E00E4DD20 /* ofxiOSExternalDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSExternalDisplay.h; sourceTree = "<group>"; };
+		FDD9E53E17C5219E00E4DD20 /* ofxiOSExternalDisplay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSExternalDisplay.mm; sourceTree = "<group>"; };
+		FDD9E53F17C5219E00E4DD20 /* ofxiOSExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSExtras.h; sourceTree = "<group>"; };
+		FDD9E54017C5219E00E4DD20 /* ofxiOSExtras.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSExtras.mm; sourceTree = "<group>"; };
+		FDD9E54117C5219E00E4DD20 /* ofxiOSImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSImagePicker.h; sourceTree = "<group>"; };
+		FDD9E54217C5219E00E4DD20 /* ofxiOSImagePicker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSImagePicker.mm; sourceTree = "<group>"; };
+		FDD9E54317C5219E00E4DD20 /* ofxiOSKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSKeyboard.h; sourceTree = "<group>"; };
+		FDD9E54417C5219E00E4DD20 /* ofxiOSKeyboard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSKeyboard.mm; sourceTree = "<group>"; };
+		FDD9E54517C5219E00E4DD20 /* ofxiOSMapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSMapKit.h; sourceTree = "<group>"; };
+		FDD9E54617C5219E00E4DD20 /* ofxiOSMapKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSMapKit.mm; sourceTree = "<group>"; };
+		FDD9E54717C5219E00E4DD20 /* ofxiOSMapKitDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSMapKitDelegate.h; sourceTree = "<group>"; };
+		FDD9E54817C5219E00E4DD20 /* ofxiOSMapKitDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSMapKitDelegate.mm; sourceTree = "<group>"; };
+		FDD9E54917C5219E00E4DD20 /* ofxiOSMapKitListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSMapKitListener.h; sourceTree = "<group>"; };
+		FDD9E54A17C5219E00E4DD20 /* ofxiPhoneExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiPhoneExtras.h; sourceTree = "<group>"; };
+		FDD9E54C17C5219E00E4DD20 /* AVFoundationVideoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFoundationVideoGrabber.h; sourceTree = "<group>"; };
+		FDD9E54D17C5219E00E4DD20 /* AVFoundationVideoGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVFoundationVideoGrabber.mm; sourceTree = "<group>"; };
+		FDD9E54E17C5219E00E4DD20 /* AVFoundationVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFoundationVideoPlayer.h; sourceTree = "<group>"; };
+		FDD9E54F17C5219E00E4DD20 /* AVFoundationVideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVFoundationVideoPlayer.m; sourceTree = "<group>"; };
+		FDD9E55017C5219E00E4DD20 /* ofxiOSVideoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSVideoGrabber.h; sourceTree = "<group>"; };
+		FDD9E55117C5219E00E4DD20 /* ofxiOSVideoGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSVideoGrabber.mm; sourceTree = "<group>"; };
+		FDD9E55217C5219E00E4DD20 /* ofxiOSVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiOSVideoPlayer.h; sourceTree = "<group>"; };
+		FDD9E55317C5219E00E4DD20 /* ofxiOSVideoPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiOSVideoPlayer.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,7 +407,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E41D421413B3A95300A75A5D /* libofxiPhone_iphoneos_Debug.a in Frameworks */,
+				E41D421413B3A95300A75A5D /* libofxiOS_iphoneos_Debug.a in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
 				288765FD0DF74451002DB57D /* CoreGraphics.framework in Frameworks */,
@@ -408,7 +492,6 @@
 		57A321CD178AF72800C68A41 /* ofxOpenCv */ = {
 			isa = PBXGroup;
 			children = (
-				57A321CE178AF72800C68A41 /* install.xml */,
 				57A321CF178AF72800C68A41 /* libs */,
 				57A32242178AF72800C68A41 /* src */,
 			);
@@ -699,7 +782,6 @@
 			isa = PBXGroup;
 			children = (
 				57AB6CAD167FE07E000C1B18 /* changelog.txt */,
-				57AB6CAE167FE07E000C1B18 /* install.xml */,
 				57AB6CAF167FE07E000C1B18 /* LICENSE.txt */,
 				57AB6CB0167FE07E000C1B18 /* src */,
 			);
@@ -716,31 +798,9 @@
 			path = src;
 			sourceTree = "<group>";
 		};
-		57AB6CB3167FE07E000C1B18 /* ofxTweener */ = {
-			isa = PBXGroup;
-			children = (
-				57AB6CB4167FE07E000C1B18 /* README */,
-				57AB6CB5167FE07E000C1B18 /* src */,
-			);
-			name = ofxTweener;
-			path = ../../../addons/ofxTweener;
-			sourceTree = "<group>";
-		};
-		57AB6CB5167FE07E000C1B18 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				57AB6CB6167FE07E000C1B18 /* ofxTransitions.cpp */,
-				57AB6CB7167FE07E000C1B18 /* ofxTransitions.h */,
-				57AB6CB8167FE07E000C1B18 /* ofxTweener.cpp */,
-				57AB6CB9167FE07E000C1B18 /* ofxTweener.h */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		57AB6CBA167FE07E000C1B18 /* ofxUI */ = {
 			isa = PBXGroup;
 			children = (
-				57AB6CBB167FE07E000C1B18 /* README */,
 				57AB6CBC167FE07E000C1B18 /* src */,
 			);
 			name = ofxUI;
@@ -837,25 +897,6 @@
 			name = tools;
 			sourceTree = "<group>";
 		};
-		57F000C11788710700575BA3 /* ofxiPhoneTorch */ = {
-			isa = PBXGroup;
-			children = (
-				57F000D11788710700575BA3 /* README */,
-				57F000D21788710700575BA3 /* src */,
-			);
-			name = ofxiPhoneTorch;
-			path = ../../../addons/ofxiPhoneTorch;
-			sourceTree = "<group>";
-		};
-		57F000D21788710700575BA3 /* src */ = {
-			isa = PBXGroup;
-			children = (
-				57F000D31788710700575BA3 /* ofxiPhoneTorch.h */,
-				57F000D41788710700575BA3 /* ofxiPhoneTorch.mm */,
-			);
-			path = src;
-			sourceTree = "<group>";
-		};
 		BB16E9930F2B1E5900518274 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -867,10 +908,11 @@
 		BB16F26B0F2B646B00518274 /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				FDD9E50A17C5219D00E4DD20 /* ofxiOS */,
+				FDD9E4EC17C5202F00E4DD20 /* ofxiPhoneTorch */,
+				FDD9E4CA17C51FCD00E4DD20 /* ofxTweener */,
 				57A321CD178AF72800C68A41 /* ofxOpenCv */,
-				57F000C11788710700575BA3 /* ofxiPhoneTorch */,
 				57AB6CAC167FE07E000C1B18 /* ofxAccelerometer */,
-				57AB6CB3167FE07E000C1B18 /* ofxTweener */,
 				57AB6CBA167FE07E000C1B18 /* ofxUI */,
 				57AB6CE5167FE07E000C1B18 /* ofxXmlSettings */,
 			);
@@ -910,7 +952,7 @@
 		E41D40FE13B3A0D800A75A5D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E41D410213B3A0D800A75A5D /* libofxiPhone_iphoneos_Debug.a */,
+				E41D410213B3A0D800A75A5D /* libofxiOS_iphoneos_Debug.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -918,10 +960,10 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				FDD9E4C117C51D6400E4DD20 /* MorseCodec.cpp */,
+				FDD9E4C217C51D6400E4DD20 /* MorseCodec.h */,
 				57AB6D0A16804B0A000C1B18 /* tools */,
 				4220C11D17BD1C1300EF1FDE /* decodeThread.h */,
-				5799283A17AE2581007DEAC7 /* MorseCodec.cpp */,
-				5799283B17AE2581007DEAC7 /* MorseCodec.h */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
 				E4D8936D11527B74007E1F53 /* ofkiosApp.mm */,
 				E4D8936C11527B74007E1F53 /* ofkiosApp.h */,
@@ -932,6 +974,181 @@
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
+		};
+		FDD9E4CA17C51FCD00E4DD20 /* ofxTweener */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E4DB17C51FCD00E4DD20 /* src */,
+			);
+			name = ofxTweener;
+			path = ../../../addons/ofxTweener;
+			sourceTree = "<group>";
+		};
+		FDD9E4DB17C51FCD00E4DD20 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E4DC17C51FCD00E4DD20 /* ofxTransitions.cpp */,
+				FDD9E4DD17C51FCD00E4DD20 /* ofxTransitions.h */,
+				FDD9E4DE17C51FCD00E4DD20 /* ofxTweener.cpp */,
+				FDD9E4DF17C51FCD00E4DD20 /* ofxTweener.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FDD9E4EC17C5202F00E4DD20 /* ofxiPhoneTorch */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E4FD17C5203000E4DD20 /* src */,
+			);
+			name = ofxiPhoneTorch;
+			path = ../../../addons/ofxiPhoneTorch;
+			sourceTree = "<group>";
+		};
+		FDD9E4FD17C5203000E4DD20 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E4FE17C5203000E4DD20 /* ofxiPhoneTorch.h */,
+				FDD9E4FF17C5203000E4DD20 /* ofxiPhoneTorch.mm */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FDD9E50A17C5219D00E4DD20 /* ofxiOS */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E50B17C5219D00E4DD20 /* src */,
+			);
+			name = ofxiOS;
+			path = ../../../addons/ofxiOS;
+			sourceTree = "<group>";
+		};
+		FDD9E50B17C5219D00E4DD20 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E50C17C5219D00E4DD20 /* app */,
+				FDD9E51017C5219D00E4DD20 /* core */,
+				FDD9E51717C5219D00E4DD20 /* events */,
+				FDD9E51C17C5219D00E4DD20 /* gl */,
+				FDD9E52417C5219D00E4DD20 /* ofxiOS.h */,
+				FDD9E52517C5219D00E4DD20 /* ofxiOSExtensions.h */,
+				FDD9E52617C5219E00E4DD20 /* ofxiPhone.h */,
+				FDD9E52717C5219E00E4DD20 /* sound */,
+				FDD9E53A17C5219E00E4DD20 /* utils */,
+				FDD9E54B17C5219E00E4DD20 /* video */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		FDD9E50C17C5219D00E4DD20 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E50D17C5219D00E4DD20 /* ofAppiOSWindow.h */,
+				FDD9E50E17C5219D00E4DD20 /* ofAppiOSWindow.mm */,
+				FDD9E50F17C5219D00E4DD20 /* ofxiOSApp.h */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		FDD9E51017C5219D00E4DD20 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E51117C5219D00E4DD20 /* ofxiOSAppDelegate.h */,
+				FDD9E51217C5219D00E4DD20 /* ofxiOSAppDelegate.mm */,
+				FDD9E51317C5219D00E4DD20 /* ofxiOSEAGLView.h */,
+				FDD9E51417C5219D00E4DD20 /* ofxiOSEAGLView.mm */,
+				FDD9E51517C5219D00E4DD20 /* ofxiOSViewController.h */,
+				FDD9E51617C5219D00E4DD20 /* ofxiOSViewController.mm */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		FDD9E51717C5219D00E4DD20 /* events */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E51817C5219D00E4DD20 /* ofxiOSAccelerometer.mm */,
+				FDD9E51917C5219D00E4DD20 /* ofxiOSAlerts.h */,
+				FDD9E51A17C5219D00E4DD20 /* ofxiOSAlerts.mm */,
+				FDD9E51B17C5219D00E4DD20 /* ofxiOSAlertsListener.h */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		FDD9E51C17C5219D00E4DD20 /* gl */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E51D17C5219D00E4DD20 /* EAGLView.h */,
+				FDD9E51E17C5219D00E4DD20 /* EAGLView.m */,
+				FDD9E51F17C5219D00E4DD20 /* ES1Renderer.h */,
+				FDD9E52017C5219D00E4DD20 /* ES1Renderer.m */,
+				FDD9E52117C5219D00E4DD20 /* ES2Renderer.h */,
+				FDD9E52217C5219D00E4DD20 /* ES2Renderer.m */,
+				FDD9E52317C5219D00E4DD20 /* ESRenderer.h */,
+			);
+			path = gl;
+			sourceTree = "<group>";
+		};
+		FDD9E52717C5219E00E4DD20 /* sound */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E52817C5219E00E4DD20 /* AVSoundPlayer.h */,
+				FDD9E52917C5219E00E4DD20 /* AVSoundPlayer.m */,
+				FDD9E52A17C5219E00E4DD20 /* ofxiOSSoundPlayer.h */,
+				FDD9E52B17C5219E00E4DD20 /* ofxiOSSoundPlayer.mm */,
+				FDD9E52C17C5219E00E4DD20 /* ofxiOSSoundStream.h */,
+				FDD9E52D17C5219E00E4DD20 /* ofxiOSSoundStream.mm */,
+				FDD9E52E17C5219E00E4DD20 /* ofxiOSSoundStreamDelegate.h */,
+				FDD9E52F17C5219E00E4DD20 /* ofxiOSSoundStreamDelegate.mm */,
+				FDD9E53017C5219E00E4DD20 /* ofxOpenALSoundPlayer.cpp */,
+				FDD9E53117C5219E00E4DD20 /* ofxOpenALSoundPlayer.h */,
+				FDD9E53217C5219E00E4DD20 /* SoundEngine.cpp */,
+				FDD9E53317C5219E00E4DD20 /* SoundEngine.h */,
+				FDD9E53417C5219E00E4DD20 /* SoundInputStream.h */,
+				FDD9E53517C5219E00E4DD20 /* SoundInputStream.m */,
+				FDD9E53617C5219E00E4DD20 /* SoundOutputStream.h */,
+				FDD9E53717C5219E00E4DD20 /* SoundOutputStream.m */,
+				FDD9E53817C5219E00E4DD20 /* SoundStream.h */,
+				FDD9E53917C5219E00E4DD20 /* SoundStream.m */,
+			);
+			path = sound;
+			sourceTree = "<group>";
+		};
+		FDD9E53A17C5219E00E4DD20 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E53B17C5219E00E4DD20 /* ofxiOSCoreLocation.h */,
+				FDD9E53C17C5219E00E4DD20 /* ofxiOSCoreLocation.mm */,
+				FDD9E53D17C5219E00E4DD20 /* ofxiOSExternalDisplay.h */,
+				FDD9E53E17C5219E00E4DD20 /* ofxiOSExternalDisplay.mm */,
+				FDD9E53F17C5219E00E4DD20 /* ofxiOSExtras.h */,
+				FDD9E54017C5219E00E4DD20 /* ofxiOSExtras.mm */,
+				FDD9E54117C5219E00E4DD20 /* ofxiOSImagePicker.h */,
+				FDD9E54217C5219E00E4DD20 /* ofxiOSImagePicker.mm */,
+				FDD9E54317C5219E00E4DD20 /* ofxiOSKeyboard.h */,
+				FDD9E54417C5219E00E4DD20 /* ofxiOSKeyboard.mm */,
+				FDD9E54517C5219E00E4DD20 /* ofxiOSMapKit.h */,
+				FDD9E54617C5219E00E4DD20 /* ofxiOSMapKit.mm */,
+				FDD9E54717C5219E00E4DD20 /* ofxiOSMapKitDelegate.h */,
+				FDD9E54817C5219E00E4DD20 /* ofxiOSMapKitDelegate.mm */,
+				FDD9E54917C5219E00E4DD20 /* ofxiOSMapKitListener.h */,
+				FDD9E54A17C5219E00E4DD20 /* ofxiPhoneExtras.h */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		FDD9E54B17C5219E00E4DD20 /* video */ = {
+			isa = PBXGroup;
+			children = (
+				FDD9E54C17C5219E00E4DD20 /* AVFoundationVideoGrabber.h */,
+				FDD9E54D17C5219E00E4DD20 /* AVFoundationVideoGrabber.mm */,
+				FDD9E54E17C5219E00E4DD20 /* AVFoundationVideoPlayer.h */,
+				FDD9E54F17C5219E00E4DD20 /* AVFoundationVideoPlayer.m */,
+				FDD9E55017C5219E00E4DD20 /* ofxiOSVideoGrabber.h */,
+				FDD9E55117C5219E00E4DD20 /* ofxiOSVideoGrabber.mm */,
+				FDD9E55217C5219E00E4DD20 /* ofxiOSVideoPlayer.h */,
+				FDD9E55317C5219E00E4DD20 /* ofxiOSVideoPlayer.mm */,
+			);
+			path = video;
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -986,10 +1203,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		E41D410213B3A0D800A75A5D /* libofxiPhone_iphoneos_Debug.a */ = {
+		E41D410213B3A0D800A75A5D /* libofxiOS_iphoneos_Debug.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libofxiPhone_iphoneos_Debug.a;
+			path = libofxiOS_iphoneos_Debug.a;
 			remoteRef = E41D410113B3A0D800A75A5D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -1006,10 +1223,7 @@
 				E41D3ED713B38FB500A75A5D /* Project.xcconfig in Resources */,
 				E41D3EE613B3906D00A75A5D /* CoreOF.xcconfig in Resources */,
 				57AB6CEE167FE07E000C1B18 /* changelog.txt in Resources */,
-				57AB6CEF167FE07E000C1B18 /* install.xml in Resources */,
 				57AB6CF0167FE07E000C1B18 /* LICENSE.txt in Resources */,
-				57AB6CF2167FE07E000C1B18 /* README in Resources */,
-				57AB6CF5167FE07E000C1B18 /* README in Resources */,
 				575420A316995F2700A6A87D /* mySettings.xml in Resources */,
 				57818D221699782D00D203E2 /* Default-568h@2x.png in Resources */,
 				57818D241699783100D203E2 /* Default@2x.png in Resources */,
@@ -1018,8 +1232,6 @@
 				57752802169B086B005E5218 /* Icon-72.png in Resources */,
 				57752803169B086B005E5218 /* Icon-72@2x.png in Resources */,
 				57752805169B298E005E5218 /* ofxiphone-Info.plist in Resources */,
-				57F000DA1788710700575BA3 /* README in Resources */,
-				57A32255178AF72800C68A41 /* install.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1049,14 +1261,11 @@
 				E4D8936E11527B74007E1F53 /* main.mm in Sources */,
 				E4D8936F11527B74007E1F53 /* ofkiosApp.mm in Sources */,
 				57AB6CF1167FE07E000C1B18 /* ofxAccelerometer.cpp in Sources */,
-				57AB6CF3167FE07E000C1B18 /* ofxTransitions.cpp in Sources */,
-				57AB6CF4167FE07E000C1B18 /* ofxTweener.cpp in Sources */,
 				57AB6CF6167FE07E000C1B18 /* tinyxml.cpp in Sources */,
 				57AB6CF7167FE07E000C1B18 /* tinyxmlerror.cpp in Sources */,
 				57AB6CF8167FE07E000C1B18 /* tinyxmlparser.cpp in Sources */,
 				57AB6CF9167FE07E000C1B18 /* ofxXmlSettings.cpp in Sources */,
 				42D447E9177FCA7100834EA4 /* iosApp.mm in Sources */,
-				57F000DB1788710700575BA3 /* ofxiPhoneTorch.mm in Sources */,
 				57A32263178AF72800C68A41 /* ofxCvColorImage.cpp in Sources */,
 				57A32264178AF72800C68A41 /* ofxCvContourFinder.cpp in Sources */,
 				57A32265178AF72800C68A41 /* ofxCvFloatImage.cpp in Sources */,
@@ -1064,11 +1273,43 @@
 				57A32267178AF72800C68A41 /* ofxCvHaarFinder.cpp in Sources */,
 				57A32268178AF72800C68A41 /* ofxCvImage.cpp in Sources */,
 				57A32269178AF72800C68A41 /* ofxCvShortImage.cpp in Sources */,
-				5799283C17AE2581007DEAC7 /* MorseCodec.cpp in Sources */,
 				4247ACB017B29AFD00EC45C1 /* ofkDebugGraphMonitor.cpp in Sources */,
 				575F2E8517C50C4400478851 /* ofkglImageRenderer.cpp in Sources */,
 				575F2E8617C50C4400478851 /* ofkMultiTouchEvent.cpp in Sources */,
 				575F2E8717C50C4400478851 /* ofkXMLProperties.mm in Sources */,
+				FDD9E4C317C51D6400E4DD20 /* MorseCodec.cpp in Sources */,
+				FDD9E4E717C51FCD00E4DD20 /* ofxTransitions.cpp in Sources */,
+				FDD9E4E817C51FCD00E4DD20 /* ofxTweener.cpp in Sources */,
+				FDD9E50617C5203000E4DD20 /* ofxiPhoneTorch.mm in Sources */,
+				FDD9E55417C5219E00E4DD20 /* ofAppiOSWindow.mm in Sources */,
+				FDD9E55517C5219E00E4DD20 /* ofxiOSAppDelegate.mm in Sources */,
+				FDD9E55617C5219E00E4DD20 /* ofxiOSEAGLView.mm in Sources */,
+				FDD9E55717C5219E00E4DD20 /* ofxiOSViewController.mm in Sources */,
+				FDD9E55817C5219E00E4DD20 /* ofxiOSAccelerometer.mm in Sources */,
+				FDD9E55917C5219E00E4DD20 /* ofxiOSAlerts.mm in Sources */,
+				FDD9E55A17C5219E00E4DD20 /* EAGLView.m in Sources */,
+				FDD9E55B17C5219E00E4DD20 /* ES1Renderer.m in Sources */,
+				FDD9E55C17C5219E00E4DD20 /* ES2Renderer.m in Sources */,
+				FDD9E55D17C5219E00E4DD20 /* AVSoundPlayer.m in Sources */,
+				FDD9E55E17C5219E00E4DD20 /* ofxiOSSoundPlayer.mm in Sources */,
+				FDD9E55F17C5219E00E4DD20 /* ofxiOSSoundStream.mm in Sources */,
+				FDD9E56017C5219E00E4DD20 /* ofxiOSSoundStreamDelegate.mm in Sources */,
+				FDD9E56117C5219E00E4DD20 /* ofxOpenALSoundPlayer.cpp in Sources */,
+				FDD9E56217C5219E00E4DD20 /* SoundEngine.cpp in Sources */,
+				FDD9E56317C5219E00E4DD20 /* SoundInputStream.m in Sources */,
+				FDD9E56417C5219E00E4DD20 /* SoundOutputStream.m in Sources */,
+				FDD9E56517C5219E00E4DD20 /* SoundStream.m in Sources */,
+				FDD9E56617C5219E00E4DD20 /* ofxiOSCoreLocation.mm in Sources */,
+				FDD9E56717C5219E00E4DD20 /* ofxiOSExternalDisplay.mm in Sources */,
+				FDD9E56817C5219E00E4DD20 /* ofxiOSExtras.mm in Sources */,
+				FDD9E56917C5219E00E4DD20 /* ofxiOSImagePicker.mm in Sources */,
+				FDD9E56A17C5219E00E4DD20 /* ofxiOSKeyboard.mm in Sources */,
+				FDD9E56B17C5219E00E4DD20 /* ofxiOSMapKit.mm in Sources */,
+				FDD9E56C17C5219E00E4DD20 /* ofxiOSMapKitDelegate.mm in Sources */,
+				FDD9E56D17C5219E00E4DD20 /* AVFoundationVideoGrabber.mm in Sources */,
+				FDD9E56E17C5219E00E4DD20 /* AVFoundationVideoPlayer.m in Sources */,
+				FDD9E56F17C5219E00E4DD20 /* ofxiOSVideoGrabber.mm in Sources */,
+				FDD9E57017C5219E00E4DD20 /* ofxiOSVideoPlayer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
