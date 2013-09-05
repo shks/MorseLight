@@ -55,7 +55,7 @@
 		E4A823A412561BE3002F86A2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4A823A312561BE3002F86A2 /* CoreGraphics.framework */; };
 		E4D8936E11527B74007E1F53 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936B11527B74007E1F53 /* main.mm */; };
 		E4D8936F11527B74007E1F53 /* ofkiosApp.mm in Sources */ = {isa = PBXBuildFile; fileRef = E4D8936D11527B74007E1F53 /* ofkiosApp.mm */; };
-		FDD9E4C317C51D6400E4DD20 /* MorseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4C117C51D6400E4DD20 /* MorseCodec.cpp */; };
+		FDC027C617D8E696009F3AD8 /* MorseCodec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDC027C417D8E695009F3AD8 /* MorseCodec.cpp */; };
 		FDD9E4E717C51FCD00E4DD20 /* ofxTransitions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4DC17C51FCD00E4DD20 /* ofxTransitions.cpp */; };
 		FDD9E4E817C51FCD00E4DD20 /* ofxTweener.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4DE17C51FCD00E4DD20 /* ofxTweener.cpp */; };
 		FDD9E50617C5203000E4DD20 /* ofxiPhoneTorch.mm in Sources */ = {isa = PBXBuildFile; fileRef = FDD9E4FF17C5203000E4DD20 /* ofxiPhoneTorch.mm */; };
@@ -314,8 +314,8 @@
 		E4D8936B11527B74007E1F53 /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = src/main.mm; sourceTree = SOURCE_ROOT; };
 		E4D8936C11527B74007E1F53 /* ofkiosApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofkiosApp.h; path = src/ofkiosApp.h; sourceTree = SOURCE_ROOT; };
 		E4D8936D11527B74007E1F53 /* ofkiosApp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ofkiosApp.mm; path = src/ofkiosApp.mm; sourceTree = SOURCE_ROOT; };
-		FDD9E4C117C51D6400E4DD20 /* MorseCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MorseCodec.cpp; path = "../../../../../../../Dropbox/work/rAA/MorseCode/c++/MorseCodec.cpp"; sourceTree = "<group>"; };
-		FDD9E4C217C51D6400E4DD20 /* MorseCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MorseCodec.h; path = "../../../../../../../Dropbox/work/rAA/MorseCode/c++/MorseCodec.h"; sourceTree = "<group>"; };
+		FDC027C417D8E695009F3AD8 /* MorseCodec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MorseCodec.cpp; sourceTree = "<group>"; };
+		FDC027C517D8E695009F3AD8 /* MorseCodec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MorseCodec.h; sourceTree = "<group>"; };
 		FDD9E4DC17C51FCD00E4DD20 /* ofxTransitions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTransitions.cpp; sourceTree = "<group>"; };
 		FDD9E4DD17C51FCD00E4DD20 /* ofxTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTransitions.h; sourceTree = "<group>"; };
 		FDD9E4DE17C51FCD00E4DD20 /* ofxTweener.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTweener.cpp; sourceTree = "<group>"; };
@@ -934,8 +934,8 @@
 		E4D8936A11527B74007E1F53 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				FDD9E4C117C51D6400E4DD20 /* MorseCodec.cpp */,
-				FDD9E4C217C51D6400E4DD20 /* MorseCodec.h */,
+				FDC027C417D8E695009F3AD8 /* MorseCodec.cpp */,
+				FDC027C517D8E695009F3AD8 /* MorseCodec.h */,
 				57AB6D0A16804B0A000C1B18 /* tools */,
 				4220C11D17BD1C1300EF1FDE /* decodeThread.h */,
 				E4D8936B11527B74007E1F53 /* main.mm */,
@@ -1251,7 +1251,6 @@
 				575F2E8517C50C4400478851 /* ofkglImageRenderer.cpp in Sources */,
 				575F2E8617C50C4400478851 /* ofkMultiTouchEvent.cpp in Sources */,
 				575F2E8717C50C4400478851 /* ofkXMLProperties.mm in Sources */,
-				FDD9E4C317C51D6400E4DD20 /* MorseCodec.cpp in Sources */,
 				FDD9E4E717C51FCD00E4DD20 /* ofxTransitions.cpp in Sources */,
 				FDD9E4E817C51FCD00E4DD20 /* ofxTweener.cpp in Sources */,
 				FDD9E50617C5203000E4DD20 /* ofxiPhoneTorch.mm in Sources */,
@@ -1284,6 +1283,7 @@
 				FDD9E56E17C5219E00E4DD20 /* AVFoundationVideoPlayer.m in Sources */,
 				FDD9E56F17C5219E00E4DD20 /* ofxiOSVideoGrabber.mm in Sources */,
 				FDD9E57017C5219E00E4DD20 /* ofxiOSVideoPlayer.mm in Sources */,
+				FDC027C617D8E696009F3AD8 /* MorseCodec.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
