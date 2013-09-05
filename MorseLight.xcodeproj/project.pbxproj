@@ -25,19 +25,6 @@
 		57752805169B298E005E5218 /* ofxiphone-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57752804169B298E005E5218 /* ofxiphone-Info.plist */; };
 		57818D221699782D00D203E2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57818D211699782D00D203E2 /* Default-568h@2x.png */; };
 		57818D241699783100D203E2 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57818D231699783100D203E2 /* Default@2x.png */; };
-		57A32256178AF72800C68A41 /* opencv_calib3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32235178AF72800C68A41 /* opencv_calib3d.a */; };
-		57A32257178AF72800C68A41 /* opencv_contrib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32236178AF72800C68A41 /* opencv_contrib.a */; };
-		57A32258178AF72800C68A41 /* opencv_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32237178AF72800C68A41 /* opencv_core.a */; };
-		57A32259178AF72800C68A41 /* opencv_features2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32238178AF72800C68A41 /* opencv_features2d.a */; };
-		57A3225A178AF72800C68A41 /* opencv_flann.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32239178AF72800C68A41 /* opencv_flann.a */; };
-		57A3225B178AF72800C68A41 /* opencv_gpu.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A3223A178AF72800C68A41 /* opencv_gpu.a */; };
-		57A3225C178AF72800C68A41 /* opencv_highgui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A3223B178AF72800C68A41 /* opencv_highgui.a */; };
-		57A3225D178AF72800C68A41 /* opencv_imgproc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A3223C178AF72800C68A41 /* opencv_imgproc.a */; };
-		57A3225E178AF72800C68A41 /* opencv_legacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A3223D178AF72800C68A41 /* opencv_legacy.a */; };
-		57A3225F178AF72800C68A41 /* opencv_ml.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A3223E178AF72800C68A41 /* opencv_ml.a */; };
-		57A32260178AF72800C68A41 /* opencv_objdetect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A3223F178AF72800C68A41 /* opencv_objdetect.a */; };
-		57A32261178AF72800C68A41 /* opencv_video.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32240178AF72800C68A41 /* opencv_video.a */; };
-		57A32262178AF72800C68A41 /* zlib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57A32241178AF72800C68A41 /* zlib.a */; };
 		57A32263178AF72800C68A41 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57A32244178AF72800C68A41 /* ofxCvColorImage.cpp */; };
 		57A32264178AF72800C68A41 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57A32247178AF72800C68A41 /* ofxCvContourFinder.cpp */; };
 		57A32265178AF72800C68A41 /* ofxCvFloatImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 57A32249178AF72800C68A41 /* ofxCvFloatImage.cpp */; };
@@ -421,19 +408,6 @@
 				E41D400C13B39D2100A75A5D /* CoreMedia.framework in Frameworks */,
 				E41D400D13B39D2100A75A5D /* CoreVideo.framework in Frameworks */,
 				E41D400E13B39D2100A75A5D /* MapKit.framework in Frameworks */,
-				57A32256178AF72800C68A41 /* opencv_calib3d.a in Frameworks */,
-				57A32257178AF72800C68A41 /* opencv_contrib.a in Frameworks */,
-				57A32258178AF72800C68A41 /* opencv_core.a in Frameworks */,
-				57A32259178AF72800C68A41 /* opencv_features2d.a in Frameworks */,
-				57A3225A178AF72800C68A41 /* opencv_flann.a in Frameworks */,
-				57A3225B178AF72800C68A41 /* opencv_gpu.a in Frameworks */,
-				57A3225C178AF72800C68A41 /* opencv_highgui.a in Frameworks */,
-				57A3225D178AF72800C68A41 /* opencv_imgproc.a in Frameworks */,
-				57A3225E178AF72800C68A41 /* opencv_legacy.a in Frameworks */,
-				57A3225F178AF72800C68A41 /* opencv_ml.a in Frameworks */,
-				57A32260178AF72800C68A41 /* opencv_objdetect.a in Frameworks */,
-				57A32261178AF72800C68A41 /* opencv_video.a in Frameworks */,
-				57A32262178AF72800C68A41 /* zlib.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1328,30 +1302,66 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../addons/ofxOpenCv/libs/opencv/lib/ios\"",
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_legacy.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_gpu.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_video.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_objdetect.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_highgui.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_imgproc.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/zlib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_flann.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_contrib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_ml.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_core.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_calib3d.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_features2d.a,
 				);
 				PRODUCT_NAME = MorseLight;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Debug;
 		};
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = iPhone_Prefix.pch;
 				INFOPLIST_FILE = "ofxiphone-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../addons/ofxOpenCv/libs/opencv/lib/ios\"",
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = (
+					"$(OF_CORE_LIBS)",
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_legacy.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_gpu.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_video.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_objdetect.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_highgui.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_imgproc.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/zlib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_flann.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_contrib.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_ml.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_core.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_calib3d.a,
+					../../../addons/ofxOpenCv/libs/opencv/lib/ios/opencv_features2d.a,
 				);
 				PRODUCT_NAME = MorseLight;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "armv6 armv7";
 			};
 			name = Release;
 		};

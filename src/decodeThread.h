@@ -88,7 +88,6 @@ public:
                 result = snew;
             unlock();
             sleep(INTERVAL_MSEC);
-            cout << "threadedFunction" << endl;
         }
     }
 
