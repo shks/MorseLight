@@ -316,13 +316,14 @@ namespace
 
 
 //const float MorseCodec::Decoder::TOLERANCE = 2.0f;
-const float MorseCodec::Decoder::TOLERANCE = 2.5f;
+const float MorseCodec::Decoder::TOLERANCE_MINIMUM = 2.5f;
+const float MorseCodec::Decoder::TOLERANCE_MAXIMUM = 5.0f;
 const int64_t MorseCodec::Decoder::MINIMUM_RESOLUTION = 8;
 const int64_t MorseCodec::Decoder::MAXIMUM_RESOLUTION = 500;
 const vector<int64_t>::size_type MorseCodec::Decoder::QUEUE_SIZE_MAX(1024);
 
 MorseCodec::Decoder::Decoder()
-: upstrokeTime(0), downstrokeTime(0), minimum(0), maximum(0), hlPrev(false)
+: upstrokeTime(0), downstrokeTime(0), dotDuration(0), hlPrev(false)
 {
 }
 
@@ -362,40 +363,27 @@ string MorseCodec::Decoder::process(bool isHigh)
         for (int i = 0; i < queue.size(); i++) {
             int64_t d = (int64_t)queue.at(i);
             if (d > 0) {
-//            if (d < 0)
-//                d = -d;
-                if (minimum == 0) {
-                    printf("<<< RESET 1 >>> %lld\n", minimum);
-                    minimum = d / 3;
-                    if (minimum == 0)
-                        minimum = MINIMUM_RESOLUTION;
-                    maximum = minimum * 3;
+                if (dotDuration == 0) {
+                    printf("<<< RESET 1 >>> %lld\n", dotDuration);
+                    dotDuration = d;
                 }
                 else {
-                    if (d < minimum)
-                        minimum = (d + minimum) / 2;
-                    else if (d > maximum) {
-                        maximum = (d + maximum) / 2;
-                        if (minimum > 0 && maximum > minimum * 4) {
-                            maximum = minimum * 4;
-                        }
-                    }
+                    if (d < dotDuration)
+                        dotDuration = d;
                 }
+                if (dotDuration < MINIMUM_RESOLUTION)
+                    dotDuration = MINIMUM_RESOLUTION;
             } else if (d < 0) {
-                if ((-d) > MAXIMUM_RESOLUTION * 3) {
-                    printf("<<< RESET 2 >>> %lld, %lld\n", d, minimum);
-                    minimum = -d / 3;
-                    if (minimum == 0)
-                        minimum = MINIMUM_RESOLUTION;
-                    maximum = minimum * 3;
-                    
+                if ((-d) > MAXIMUM_RESOLUTION) {
+                    printf("<<< RESET 2 >>> %lld, %lld\n", d, dotDuration);
+                    dotDuration = 0;                    
                 }
             }
         }
 
-        if (maximum >= minimum * 3) {
-            int64_t dotMax = (int64_t)(minimum * TOLERANCE);
-            int64_t dashMax = dotMax * 3;
+        if (dotDuration >= MINIMUM_RESOLUTION) {
+            int64_t dotMax = (int64_t)(dotDuration * TOLERANCE_MINIMUM);
+            int64_t dashMax = (int64_t)(dotDuration * TOLERANCE_MAXIMUM);
             ///for (int i = queue.size() - 1; i >= 0; i--) {
             for (int i = 0; i < queue.size(); i++) {
                 int64_t d = (int64_t)queue.at(i);  
@@ -411,9 +399,9 @@ string MorseCodec::Decoder::process(bool isHigh)
                 list<int> tmp;
                 for (int i = 0; i < lastIndex; i++) {
                     int64_t d = (int64_t)queue.at(i);
-                    if (d > 0 && d <= dotMax) {
+                    if (d >= MINIMUM_RESOLUTION && d <= dotMax) {
                         tmp.push_back(1);
-                    } else if (d > dotMax && d < dashMax) {
+                    } else if (d > dotMax && d <= dashMax) {
                         tmp.push_back(3);
                     }
                 }            
@@ -438,5 +426,6 @@ string MorseCodec::Decoder::process(bool isHigh)
             }
         }
     }
+    
     return res;
 }

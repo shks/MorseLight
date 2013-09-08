@@ -16,11 +16,11 @@ public:
     private:
         int64_t upstrokeTime;
         int64_t downstrokeTime;
-        int64_t minimum; 
-        int64_t maximum;
+        int64_t dotDuration;
         bool hlPrev;
         std::vector<int64_t> queue;
-        static const float TOLERANCE;
+        static const float TOLERANCE_MINIMUM;
+        static const float TOLERANCE_MAXIMUM;
         static const int64_t MINIMUM_RESOLUTION;
         static const int64_t MAXIMUM_RESOLUTION;
         static const std::vector<int64_t>::size_type QUEUE_SIZE_MAX;
